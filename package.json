@@ -1,6 +1,6 @@
 {
   "name": "forgeus-engine",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The deterministic evolution engine behind Forgeus: replay any published generation and get the same hash.",
   "type": "module",
   "license": "MIT",
