@@ -1,0 +1,28 @@
+{
+  "name": "forgeus-engine",
+  "version": "1.0.0",
+  "description": "The deterministic evolution engine behind Forgeus: replay any published generation and get the same hash.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "exports": {
+    ".": "./src/engine.ts"
+  },
+  "scripts": {
+    "test": "node --no-warnings --test test/*.test.mjs",
+    "replay": "node --no-warnings scripts/replay.mjs",
+    "verify-chain": "node --no-warnings scripts/verify-chain.mjs",
+    "check-live": "node --no-warnings scripts/check-live.mjs",
+    "vectors": "node --no-warnings scripts/fetch-vectors.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forgeus-science/forgeus-engine.git"
+  },
+  "homepage": "https://forgeus.science",
+  "bugs": {
+    "url": "https://github.com/forgeus-science/forgeus-engine/issues"
+  }
+}
