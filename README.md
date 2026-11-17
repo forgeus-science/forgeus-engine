@@ -2,7 +2,7 @@
 
 The deterministic evolution engine behind [Forgeus](https://forgeus.science). 24 paper-trading strategies are scored on live Uniswap V3 quotes from Base, the weak half is culled, the survivors mutate, and every generation is published as a hash-chained record. This repo lets you recompute any generation yourself and get the same hash.
 
-**Paper only.** No orders are sent and no funds move. Real execution is not live, and the $FOUS token has not launched.
+**Paper only.** No orders are sent and no funds move. Real execution is not live, and the $FOUS token launch is in progress.
 
 - One file, no dependencies: [`src/engine.ts`](src/engine.ts). The app serves the same file at <https://dapp.forgeus.science/engine.ts>, and `npm run check-live` checks that the two are byte-identical.
 - Spec: [`PROTOCOL.md`](PROTOCOL.md)
