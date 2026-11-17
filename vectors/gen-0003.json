@@ -1,0 +1,3157 @@
+{
+ "record": {
+  "v": 1,
+  "n": 3,
+  "engine": "forgeus-engine/1",
+  "prev_hash": "f54ac1ff49e0cfeab5ac9980f84bfb60f41ea3c006c0577e2b07e14d2ce798c8",
+  "seed": "54428c47",
+  "params": {
+   "gen_ticks": 60,
+   "warmup": 60,
+   "pop": 24,
+   "cost_bps": 5,
+   "dd_weight": 0.5,
+   "idle_penalty": 0.001
+  },
+  "window": {
+   "ETH-USDC": {
+    "from_id": 361,
+    "to_id": 479,
+    "from_block": 58575991,
+    "to_block": 58577761,
+    "start_ts": 1794873227,
+    "end_ts": 1794876767,
+    "warmup_from_id": 241,
+    "quotes_hash": "2607c2660be4a4ead918d7d1f800ba9683e0bb8280522a9a14100462a8cce108"
+   },
+   "BTC-USDC": {
+    "from_id": 362,
+    "to_id": 480,
+    "from_block": 58575991,
+    "to_block": 58577761,
+    "start_ts": 1794873227,
+    "end_ts": 1794876767,
+    "warmup_from_id": 242,
+    "quotes_hash": "391c67ea03e56c6ffb907b90bcc1c25fbd0d4130927732d5b0562c568ef68ecc"
+   }
+  },
+  "population": [
+   {
+    "id": "f1-22",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 28,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f2-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 29,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f1-22",
+    "born": 2
+   },
+   {
+    "id": "f1-14",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 58,
+     "threshold_bps": 1,
+     "size": 0.75,
+     "stop_bps": 114
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f2-11",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 60,
+     "threshold_bps": 1,
+     "size": 0.75,
+     "stop_bps": 114
+    },
+    "parent": "f1-14",
+    "born": 2
+   },
+   {
+    "id": "f2-03",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 50,
+     "threshold_bps": 0,
+     "size": 0.2,
+     "stop_bps": 132
+    },
+    "parent": "f1-21",
+    "born": 2
+   },
+   {
+    "id": "f1-06",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 50,
+     "threshold_bps": 0,
+     "size": 1,
+     "stop_bps": 156
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-02",
+    "genome": {
+     "kind": "momentum",
+     "market": "BTC-USDC",
+     "lookback": 15,
+     "threshold_bps": 19,
+     "size": 0.6,
+     "stop_bps": 126
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-03",
+    "genome": {
+     "kind": "meanrev",
+     "market": "ETH-USDC",
+     "lookback": 28,
+     "threshold_bps": 10,
+     "size": 0.25,
+     "stop_bps": 141
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-04",
+    "genome": {
+     "kind": "meanrev",
+     "market": "BTC-USDC",
+     "lookback": 47,
+     "threshold_bps": 19,
+     "size": 0.9,
+     "stop_bps": 45
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 43,
+     "threshold_bps": 7,
+     "size": 0.45,
+     "stop_bps": 95
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-07",
+    "genome": {
+     "kind": "trend",
+     "market": "ETH-USDC",
+     "lookback": 11,
+     "threshold_bps": 16,
+     "size": 0.4,
+     "stop_bps": 97
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f1-09",
+    "genome": {
+     "kind": "momentum",
+     "market": "ETH-USDC",
+     "lookback": 50,
+     "threshold_bps": 19,
+     "size": 0.75,
+     "stop_bps": 193
+    },
+    "parent": null,
+    "born": 1
+   },
+   {
+    "id": "f3-01",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 32,
+     "threshold_bps": 0,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f1-22",
+    "born": 3
+   },
+   {
+    "id": "f3-02",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 28,
+     "threshold_bps": 3,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f1-22",
+    "born": 3
+   },
+   {
+    "id": "f3-03",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 24,
+     "threshold_bps": 0,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f1-22",
+    "born": 3
+   },
+   {
+    "id": "f3-04",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 24,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f2-05",
+    "born": 3
+   },
+   {
+    "id": "f3-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 30,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f2-05",
+    "born": 3
+   },
+   {
+    "id": "f3-06",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 35,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "parent": "f2-05",
+    "born": 3
+   },
+   {
+    "id": "f3-07",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 59,
+     "threshold_bps": 1,
+     "size": 0.75,
+     "stop_bps": 114
+    },
+    "parent": "f1-14",
+    "born": 3
+   },
+   {
+    "id": "f3-08",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 60,
+     "threshold_bps": 1,
+     "size": 0.7,
+     "stop_bps": 89
+    },
+    "parent": "f1-14",
+    "born": 3
+   },
+   {
+    "id": "f3-09",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 59,
+     "threshold_bps": 1,
+     "size": 0.75,
+     "stop_bps": 114
+    },
+    "parent": "f2-11",
+    "born": 3
+   },
+   {
+    "id": "f3-10",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 60,
+     "threshold_bps": 5,
+     "size": 0.75,
+     "stop_bps": 88
+    },
+    "parent": "f2-11",
+    "born": 3
+   },
+   {
+    "id": "f3-11",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 50,
+     "threshold_bps": 0,
+     "size": 0.2,
+     "stop_bps": 80
+    },
+    "parent": "f2-03",
+    "born": 3
+   },
+   {
+    "id": "f3-12",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 47,
+     "threshold_bps": 0,
+     "size": 1,
+     "stop_bps": 108
+    },
+    "parent": "f1-06",
+    "born": 3
+   }
+  ],
+  "results": [
+   {
+    "id": "f2-03",
+    "ret": -0.0000843,
+    "maxdd": 0.0001,
+    "fitness": -0.0001343,
+    "trades": 2,
+    "rank": 1,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-11",
+    "ret": -0.0000843,
+    "maxdd": 0.0001,
+    "fitness": -0.0001343,
+    "trades": 2,
+    "rank": 2,
+    "outcome": "survived"
+   },
+   {
+    "id": "f1-22",
+    "ret": -0.00018242,
+    "maxdd": 0.00005743,
+    "fitness": -0.00021113,
+    "trades": 2,
+    "rank": 3,
+    "outcome": "survived"
+   },
+   {
+    "id": "f2-05",
+    "ret": -0.00018242,
+    "maxdd": 0.00005743,
+    "fitness": -0.00021113,
+    "trades": 2,
+    "rank": 4,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-04",
+    "ret": -0.00018242,
+    "maxdd": 0.00005743,
+    "fitness": -0.00021113,
+    "trades": 2,
+    "rank": 5,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-05",
+    "ret": -0.00018242,
+    "maxdd": 0.00005743,
+    "fitness": -0.00021113,
+    "trades": 2,
+    "rank": 6,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-06",
+    "ret": -0.00018242,
+    "maxdd": 0.00005743,
+    "fitness": -0.00021113,
+    "trades": 2,
+    "rank": 7,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-01",
+    "ret": -0.00015241,
+    "maxdd": 0.00012503,
+    "fitness": -0.00021492,
+    "trades": 2,
+    "rank": 8,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-03",
+    "ret": -0.00015241,
+    "maxdd": 0.00012503,
+    "fitness": -0.00021492,
+    "trades": 2,
+    "rank": 9,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-08",
+    "ret": -0.0005108,
+    "maxdd": 0.00016085,
+    "fitness": -0.00059122,
+    "trades": 2,
+    "rank": 10,
+    "outcome": "survived"
+   },
+   {
+    "id": "f1-14",
+    "ret": -0.00054728,
+    "maxdd": 0.00017235,
+    "fitness": -0.00063345,
+    "trades": 2,
+    "rank": 11,
+    "outcome": "survived"
+   },
+   {
+    "id": "f2-11",
+    "ret": -0.00054728,
+    "maxdd": 0.00017235,
+    "fitness": -0.00063345,
+    "trades": 2,
+    "rank": 12,
+    "outcome": "survived"
+   },
+   {
+    "id": "f3-07",
+    "ret": -0.00054728,
+    "maxdd": 0.00017235,
+    "fitness": -0.00063345,
+    "trades": 2,
+    "rank": 13,
+    "outcome": "culled"
+   },
+   {
+    "id": "f3-09",
+    "ret": -0.00054728,
+    "maxdd": 0.00017235,
+    "fitness": -0.00063345,
+    "trades": 2,
+    "rank": 14,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-06",
+    "ret": -0.0006097,
+    "maxdd": 0.00050013,
+    "fitness": -0.00085976,
+    "trades": 2,
+    "rank": 15,
+    "outcome": "culled"
+   },
+   {
+    "id": "f3-12",
+    "ret": -0.0006097,
+    "maxdd": 0.00050013,
+    "fitness": -0.00085976,
+    "trades": 2,
+    "rank": 16,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-02",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 17,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-03",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 18,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-04",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 19,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-05",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 20,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-07",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 21,
+    "outcome": "culled"
+   },
+   {
+    "id": "f1-09",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 22,
+    "outcome": "culled"
+   },
+   {
+    "id": "f3-02",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 23,
+    "outcome": "culled"
+   },
+   {
+    "id": "f3-10",
+    "ret": 0,
+    "maxdd": 0,
+    "fitness": -0.001,
+    "trades": 0,
+    "rank": 24,
+    "outcome": "culled"
+   }
+  ],
+  "baseline": {
+   "ETH-USDC": {
+    "ret": -0.00183583,
+    "maxdd": 0.00084984,
+    "fitness": -0.00226075
+   },
+   "BTC-USDC": {
+    "ret": -0.00147087,
+    "maxdd": 0.00047159,
+    "fitness": -0.00170666
+   }
+  },
+  "offspring": [
+   {
+    "id": "f4-01",
+    "parent": "f2-03",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 36,
+     "threshold_bps": 0,
+     "size": 0.2,
+     "stop_bps": 139
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 50,
+      "to": 36
+     },
+     {
+      "field": "stop_bps",
+      "from": 132,
+      "to": 139
+     }
+    ]
+   },
+   {
+    "id": "f4-02",
+    "parent": "f2-03",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 53,
+     "threshold_bps": 6,
+     "size": 0.15,
+     "stop_bps": 160
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 50,
+      "to": 53
+     },
+     {
+      "field": "threshold_bps",
+      "from": 0,
+      "to": 6
+     },
+     {
+      "field": "size",
+      "from": 0.2,
+      "to": 0.15
+     },
+     {
+      "field": "stop_bps",
+      "from": 132,
+      "to": 160
+     }
+    ]
+   },
+   {
+    "id": "f4-03",
+    "parent": "f2-03",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 50,
+     "threshold_bps": 0,
+     "size": 0.3,
+     "stop_bps": 132
+    },
+    "diffs": [
+     {
+      "field": "size",
+      "from": 0.2,
+      "to": 0.3
+     }
+    ]
+   },
+   {
+    "id": "f4-04",
+    "parent": "f3-11",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 50,
+     "threshold_bps": 0,
+     "size": 0.1,
+     "stop_bps": 80
+    },
+    "diffs": [
+     {
+      "field": "size",
+      "from": 0.2,
+      "to": 0.1
+     }
+    ]
+   },
+   {
+    "id": "f4-05",
+    "parent": "f3-11",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 57,
+     "threshold_bps": 0,
+     "size": 0.2,
+     "stop_bps": 98
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 50,
+      "to": 57
+     },
+     {
+      "field": "stop_bps",
+      "from": 80,
+      "to": 98
+     }
+    ]
+   },
+   {
+    "id": "f4-06",
+    "parent": "f3-11",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 53,
+     "threshold_bps": 0,
+     "size": 0.2,
+     "stop_bps": 47
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 50,
+      "to": 53
+     },
+     {
+      "field": "stop_bps",
+      "from": 80,
+      "to": 47
+     }
+    ]
+   },
+   {
+    "id": "f4-07",
+    "parent": "f1-22",
+    "genome": {
+     "kind": "breakout",
+     "market": "ETH-USDC",
+     "lookback": 28,
+     "threshold_bps": 1,
+     "size": 0.35,
+     "stop_bps": 50
+    },
+    "diffs": [
+     {
+      "field": "market",
+      "from": "BTC-USDC",
+      "to": "ETH-USDC"
+     },
+     {
+      "field": "size",
+      "from": 0.25,
+      "to": 0.35
+     }
+    ]
+   },
+   {
+    "id": "f4-08",
+    "parent": "f1-22",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 33,
+     "threshold_bps": 1,
+     "size": 0.3,
+     "stop_bps": 50
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 28,
+      "to": 33
+     },
+     {
+      "field": "size",
+      "from": 0.25,
+      "to": 0.3
+     }
+    ]
+   },
+   {
+    "id": "f4-09",
+    "parent": "f2-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 29,
+     "threshold_bps": 1,
+     "size": 0.25,
+     "stop_bps": 20
+    },
+    "diffs": [
+     {
+      "field": "stop_bps",
+      "from": 50,
+      "to": 20
+     }
+    ]
+   },
+   {
+    "id": "f4-10",
+    "parent": "f2-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 23,
+     "threshold_bps": 1,
+     "size": 0.15,
+     "stop_bps": 50
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 29,
+      "to": 23
+     },
+     {
+      "field": "size",
+      "from": 0.25,
+      "to": 0.15
+     }
+    ]
+   },
+   {
+    "id": "f4-11",
+    "parent": "f3-04",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 24,
+     "threshold_bps": 6,
+     "size": 0.25,
+     "stop_bps": 50
+    },
+    "diffs": [
+     {
+      "field": "threshold_bps",
+      "from": 1,
+      "to": 6
+     }
+    ]
+   },
+   {
+    "id": "f4-12",
+    "parent": "f3-05",
+    "genome": {
+     "kind": "breakout",
+     "market": "BTC-USDC",
+     "lookback": 38,
+     "threshold_bps": 1,
+     "size": 0.15,
+     "stop_bps": 55
+    },
+    "diffs": [
+     {
+      "field": "lookback",
+      "from": 30,
+      "to": 38
+     },
+     {
+      "field": "size",
+      "from": 0.25,
+      "to": 0.15
+     },
+     {
+      "field": "stop_bps",
+      "from": 50,
+      "to": 55
+     }
+    ]
+   }
+  ],
+  "trades_hash": "a1c79515893307015d10dd68b16ac3ad5e4b64aec4f7e71ce089b5b3fef5896b",
+  "null": true,
+  "null_reason": "No strategy had a positive return and a fitness above its market's hold baseline.",
+  "best": {
+   "id": "f2-03",
+   "fitness": -0.0001343,
+   "ret": -0.0000843
+  }
+ },
+ "hash": "be8d88f8bd44e8502db5fda88e493ea72a7e836bfc435644da7ced5ba9c7f927",
+ "quotes": {
+  "ETH-USDC": [
+   {
+    "id": 241,
+    "market": "ETH-USDC",
+    "block": 58574191,
+    "ts": 1794869627,
+    "sqrt_price": "3381904737141100835580305",
+    "price": 1822.06377
+   },
+   {
+    "id": 243,
+    "market": "ETH-USDC",
+    "block": 58574221,
+    "ts": 1794869687,
+    "sqrt_price": "3381904734624599627546675",
+    "price": 1822.063767
+   },
+   {
+    "id": 245,
+    "market": "ETH-USDC",
+    "block": 58574251,
+    "ts": 1794869747,
+    "sqrt_price": "3381899123162377990104991",
+    "price": 1822.05772
+   },
+   {
+    "id": 247,
+    "market": "ETH-USDC",
+    "block": 58574281,
+    "ts": 1794869807,
+    "sqrt_price": "3381899123162377990104991",
+    "price": 1822.05772
+   },
+   {
+    "id": 249,
+    "market": "ETH-USDC",
+    "block": 58574311,
+    "ts": 1794869867,
+    "sqrt_price": "3381899123162377990104991",
+    "price": 1822.05772
+   },
+   {
+    "id": 251,
+    "market": "ETH-USDC",
+    "block": 58574341,
+    "ts": 1794869927,
+    "sqrt_price": "3381917060352652936640705",
+    "price": 1822.077048
+   },
+   {
+    "id": 253,
+    "market": "ETH-USDC",
+    "block": 58574371,
+    "ts": 1794869987,
+    "sqrt_price": "3381816631138982603665548",
+    "price": 1821.968834
+   },
+   {
+    "id": 255,
+    "market": "ETH-USDC",
+    "block": 58574401,
+    "ts": 1794870047,
+    "sqrt_price": "3381816630971215856463300",
+    "price": 1821.968833
+   },
+   {
+    "id": 257,
+    "market": "ETH-USDC",
+    "block": 58574431,
+    "ts": 1794870107,
+    "sqrt_price": "3381816624304846167603024",
+    "price": 1821.968826
+   },
+   {
+    "id": 259,
+    "market": "ETH-USDC",
+    "block": 58574461,
+    "ts": 1794870167,
+    "sqrt_price": "3381815503765827049842676",
+    "price": 1821.967619
+   },
+   {
+    "id": 261,
+    "market": "ETH-USDC",
+    "block": 58574491,
+    "ts": 1794870227,
+    "sqrt_price": "3381794849460001378771810",
+    "price": 1821.945364
+   },
+   {
+    "id": 263,
+    "market": "ETH-USDC",
+    "block": 58574521,
+    "ts": 1794870287,
+    "sqrt_price": "3381671586592928628714559",
+    "price": 1821.81255
+   },
+   {
+    "id": 265,
+    "market": "ETH-USDC",
+    "block": 58574551,
+    "ts": 1794870347,
+    "sqrt_price": "3381167161780312459768452",
+    "price": 1821.269092
+   },
+   {
+    "id": 267,
+    "market": "ETH-USDC",
+    "block": 58574581,
+    "ts": 1794870407,
+    "sqrt_price": "3381167161745081442855981",
+    "price": 1821.269092
+   },
+   {
+    "id": 269,
+    "market": "ETH-USDC",
+    "block": 58574611,
+    "ts": 1794870467,
+    "sqrt_price": "3381167161745081442855981",
+    "price": 1821.269092
+   },
+   {
+    "id": 271,
+    "market": "ETH-USDC",
+    "block": 58574641,
+    "ts": 1794870527,
+    "sqrt_price": "3381189036352596040440529",
+    "price": 1821.292657
+   },
+   {
+    "id": 273,
+    "market": "ETH-USDC",
+    "block": 58574671,
+    "ts": 1794870587,
+    "sqrt_price": "3381189036352596040440529",
+    "price": 1821.292657
+   },
+   {
+    "id": 275,
+    "market": "ETH-USDC",
+    "block": 58574701,
+    "ts": 1794870647,
+    "sqrt_price": "3381122083870943217336505",
+    "price": 1821.220529
+   },
+   {
+    "id": 277,
+    "market": "ETH-USDC",
+    "block": 58574731,
+    "ts": 1794870707,
+    "sqrt_price": "3381122050318064205094037",
+    "price": 1821.220493
+   },
+   {
+    "id": 279,
+    "market": "ETH-USDC",
+    "block": 58574761,
+    "ts": 1794870767,
+    "sqrt_price": "3381122050318064205094037",
+    "price": 1821.220493
+   },
+   {
+    "id": 281,
+    "market": "ETH-USDC",
+    "block": 58574791,
+    "ts": 1794870827,
+    "sqrt_price": "3381122050318064205094037",
+    "price": 1821.220493
+   },
+   {
+    "id": 283,
+    "market": "ETH-USDC",
+    "block": 58574821,
+    "ts": 1794870887,
+    "sqrt_price": "3381122050318064205094037",
+    "price": 1821.220493
+   },
+   {
+    "id": 285,
+    "market": "ETH-USDC",
+    "block": 58574851,
+    "ts": 1794870947,
+    "sqrt_price": "3381122050318064205094037",
+    "price": 1821.220493
+   },
+   {
+    "id": 287,
+    "market": "ETH-USDC",
+    "block": 58574881,
+    "ts": 1794871007,
+    "sqrt_price": "3381108697324179928389808",
+    "price": 1821.206108
+   },
+   {
+    "id": 289,
+    "market": "ETH-USDC",
+    "block": 58574911,
+    "ts": 1794871067,
+    "sqrt_price": "3381108697324179928389808",
+    "price": 1821.206108
+   },
+   {
+    "id": 291,
+    "market": "ETH-USDC",
+    "block": 58574941,
+    "ts": 1794871127,
+    "sqrt_price": "3380535349715260257705874",
+    "price": 1820.588503
+   },
+   {
+    "id": 293,
+    "market": "ETH-USDC",
+    "block": 58574971,
+    "ts": 1794871187,
+    "sqrt_price": "3380451524732028955709045",
+    "price": 1820.498216
+   },
+   {
+    "id": 295,
+    "market": "ETH-USDC",
+    "block": 58575001,
+    "ts": 1794871247,
+    "sqrt_price": "3380444398619782540061212",
+    "price": 1820.490541
+   },
+   {
+    "id": 297,
+    "market": "ETH-USDC",
+    "block": 58575031,
+    "ts": 1794871307,
+    "sqrt_price": "3380444398619782540061212",
+    "price": 1820.490541
+   },
+   {
+    "id": 299,
+    "market": "ETH-USDC",
+    "block": 58575061,
+    "ts": 1794871367,
+    "sqrt_price": "3380444398619782540061212",
+    "price": 1820.490541
+   },
+   {
+    "id": 301,
+    "market": "ETH-USDC",
+    "block": 58575091,
+    "ts": 1794871427,
+    "sqrt_price": "3380444398736159029522954",
+    "price": 1820.490541
+   },
+   {
+    "id": 303,
+    "market": "ETH-USDC",
+    "block": 58575121,
+    "ts": 1794871487,
+    "sqrt_price": "3380444398736159029522954",
+    "price": 1820.490541
+   },
+   {
+    "id": 305,
+    "market": "ETH-USDC",
+    "block": 58575151,
+    "ts": 1794871547,
+    "sqrt_price": "3380406090645835138220716",
+    "price": 1820.44928
+   },
+   {
+    "id": 307,
+    "market": "ETH-USDC",
+    "block": 58575181,
+    "ts": 1794871607,
+    "sqrt_price": "3380406095211932511634410",
+    "price": 1820.449285
+   },
+   {
+    "id": 309,
+    "market": "ETH-USDC",
+    "block": 58575211,
+    "ts": 1794871667,
+    "sqrt_price": "3380406095211932511634410",
+    "price": 1820.449285
+   },
+   {
+    "id": 311,
+    "market": "ETH-USDC",
+    "block": 58575241,
+    "ts": 1794871727,
+    "sqrt_price": "3380406091101467580451107",
+    "price": 1820.449281
+   },
+   {
+    "id": 313,
+    "market": "ETH-USDC",
+    "block": 58575271,
+    "ts": 1794871787,
+    "sqrt_price": "3380427966916532542789772",
+    "price": 1820.472843
+   },
+   {
+    "id": 315,
+    "market": "ETH-USDC",
+    "block": 58575301,
+    "ts": 1794871847,
+    "sqrt_price": "3380427973544615282897298",
+    "price": 1820.47285
+   },
+   {
+    "id": 317,
+    "market": "ETH-USDC",
+    "block": 58575331,
+    "ts": 1794871907,
+    "sqrt_price": "3380432165799398567381285",
+    "price": 1820.477365
+   },
+   {
+    "id": 319,
+    "market": "ETH-USDC",
+    "block": 58575361,
+    "ts": 1794871967,
+    "sqrt_price": "3380432165799398567381285",
+    "price": 1820.477365
+   },
+   {
+    "id": 321,
+    "market": "ETH-USDC",
+    "block": 58575391,
+    "ts": 1794872027,
+    "sqrt_price": "3380432165799398567381285",
+    "price": 1820.477365
+   },
+   {
+    "id": 323,
+    "market": "ETH-USDC",
+    "block": 58575421,
+    "ts": 1794872087,
+    "sqrt_price": "3380443044552861280723705",
+    "price": 1820.489082
+   },
+   {
+    "id": 325,
+    "market": "ETH-USDC",
+    "block": 58575451,
+    "ts": 1794872147,
+    "sqrt_price": "3380443044552861280723705",
+    "price": 1820.489082
+   },
+   {
+    "id": 327,
+    "market": "ETH-USDC",
+    "block": 58575481,
+    "ts": 1794872207,
+    "sqrt_price": "3380443044385087202353133",
+    "price": 1820.489082
+   },
+   {
+    "id": 329,
+    "market": "ETH-USDC",
+    "block": 58575511,
+    "ts": 1794872267,
+    "sqrt_price": "3380432090691410878400300",
+    "price": 1820.477284
+   },
+   {
+    "id": 331,
+    "market": "ETH-USDC",
+    "block": 58575541,
+    "ts": 1794872327,
+    "sqrt_price": "3380310996692484895400277",
+    "price": 1820.34686
+   },
+   {
+    "id": 333,
+    "market": "ETH-USDC",
+    "block": 58575571,
+    "ts": 1794872387,
+    "sqrt_price": "3380095556355252151871609",
+    "price": 1820.114832
+   },
+   {
+    "id": 335,
+    "market": "ETH-USDC",
+    "block": 58575601,
+    "ts": 1794872447,
+    "sqrt_price": "3379928891393666168405443",
+    "price": 1819.935345
+   },
+   {
+    "id": 337,
+    "market": "ETH-USDC",
+    "block": 58575631,
+    "ts": 1794872507,
+    "sqrt_price": "3379928865388684020967917",
+    "price": 1819.935317
+   },
+   {
+    "id": 339,
+    "market": "ETH-USDC",
+    "block": 58575661,
+    "ts": 1794872567,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 341,
+    "market": "ETH-USDC",
+    "block": 58575691,
+    "ts": 1794872627,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 343,
+    "market": "ETH-USDC",
+    "block": 58575721,
+    "ts": 1794872687,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 345,
+    "market": "ETH-USDC",
+    "block": 58575751,
+    "ts": 1794872747,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 347,
+    "market": "ETH-USDC",
+    "block": 58575781,
+    "ts": 1794872807,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 349,
+    "market": "ETH-USDC",
+    "block": 58575811,
+    "ts": 1794872867,
+    "sqrt_price": "3379937464488586609593270",
+    "price": 1819.944577
+   },
+   {
+    "id": 351,
+    "market": "ETH-USDC",
+    "block": 58575841,
+    "ts": 1794872927,
+    "sqrt_price": "3380242374831636739205978",
+    "price": 1820.272953
+   },
+   {
+    "id": 353,
+    "market": "ETH-USDC",
+    "block": 58575871,
+    "ts": 1794872987,
+    "sqrt_price": "3380304391300685131097063",
+    "price": 1820.339746
+   },
+   {
+    "id": 355,
+    "market": "ETH-USDC",
+    "block": 58575901,
+    "ts": 1794873047,
+    "sqrt_price": "3380326267115750093435728",
+    "price": 1820.363307
+   },
+   {
+    "id": 357,
+    "market": "ETH-USDC",
+    "block": 58575931,
+    "ts": 1794873107,
+    "sqrt_price": "3380326267453736105642872",
+    "price": 1820.363307
+   },
+   {
+    "id": 359,
+    "market": "ETH-USDC",
+    "block": 58575961,
+    "ts": 1794873167,
+    "sqrt_price": "3380374382892896300413146",
+    "price": 1820.41513
+   },
+   {
+    "id": 361,
+    "market": "ETH-USDC",
+    "block": 58575991,
+    "ts": 1794873227,
+    "sqrt_price": "3380374382857663743955327",
+    "price": 1820.415129
+   },
+   {
+    "id": 363,
+    "market": "ETH-USDC",
+    "block": 58576021,
+    "ts": 1794873287,
+    "sqrt_price": "3380374382361967804988085",
+    "price": 1820.415129
+   },
+   {
+    "id": 365,
+    "market": "ETH-USDC",
+    "block": 58576051,
+    "ts": 1794873347,
+    "sqrt_price": "3380374382361967804988085",
+    "price": 1820.415129
+   },
+   {
+    "id": 367,
+    "market": "ETH-USDC",
+    "block": 58576081,
+    "ts": 1794873407,
+    "sqrt_price": "3380374382361967804988085",
+    "price": 1820.415129
+   },
+   {
+    "id": 369,
+    "market": "ETH-USDC",
+    "block": 58576111,
+    "ts": 1794873467,
+    "sqrt_price": "3380374382361967804988085",
+    "price": 1820.415129
+   },
+   {
+    "id": 371,
+    "market": "ETH-USDC",
+    "block": 58576141,
+    "ts": 1794873527,
+    "sqrt_price": "3380374383177802815880629",
+    "price": 1820.41513
+   },
+   {
+    "id": 373,
+    "market": "ETH-USDC",
+    "block": 58576171,
+    "ts": 1794873587,
+    "sqrt_price": "3380374357005046577439230",
+    "price": 1820.415102
+   },
+   {
+    "id": 375,
+    "market": "ETH-USDC",
+    "block": 58576201,
+    "ts": 1794873647,
+    "sqrt_price": "3380396232820111539777895",
+    "price": 1820.438663
+   },
+   {
+    "id": 377,
+    "market": "ETH-USDC",
+    "block": 58576231,
+    "ts": 1794873707,
+    "sqrt_price": "3380396232820111539777895",
+    "price": 1820.438663
+   },
+   {
+    "id": 379,
+    "market": "ETH-USDC",
+    "block": 58576261,
+    "ts": 1794873767,
+    "sqrt_price": "3380396233608012166621740",
+    "price": 1820.438664
+   },
+   {
+    "id": 381,
+    "market": "ETH-USDC",
+    "block": 58576291,
+    "ts": 1794873827,
+    "sqrt_price": "3380396233608012166621740",
+    "price": 1820.438664
+   },
+   {
+    "id": 383,
+    "market": "ETH-USDC",
+    "block": 58576321,
+    "ts": 1794873887,
+    "sqrt_price": "3380396233608012166621740",
+    "price": 1820.438664
+   },
+   {
+    "id": 385,
+    "market": "ETH-USDC",
+    "block": 58576351,
+    "ts": 1794873947,
+    "sqrt_price": "3380312125944437281914880",
+    "price": 1820.348076
+   },
+   {
+    "id": 387,
+    "market": "ETH-USDC",
+    "block": 58576381,
+    "ts": 1794874007,
+    "sqrt_price": "3380196707816881063287013",
+    "price": 1820.22377
+   },
+   {
+    "id": 389,
+    "market": "ETH-USDC",
+    "block": 58576411,
+    "ts": 1794874067,
+    "sqrt_price": "3380196707816881063287013",
+    "price": 1820.22377
+   },
+   {
+    "id": 391,
+    "market": "ETH-USDC",
+    "block": 58576441,
+    "ts": 1794874127,
+    "sqrt_price": "3380196707816881063287013",
+    "price": 1820.22377
+   },
+   {
+    "id": 393,
+    "market": "ETH-USDC",
+    "block": 58576471,
+    "ts": 1794874187,
+    "sqrt_price": "3380196707816881063287013",
+    "price": 1820.22377
+   },
+   {
+    "id": 395,
+    "market": "ETH-USDC",
+    "block": 58576501,
+    "ts": 1794874247,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 397,
+    "market": "ETH-USDC",
+    "block": 58576531,
+    "ts": 1794874307,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 399,
+    "market": "ETH-USDC",
+    "block": 58576561,
+    "ts": 1794874367,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 401,
+    "market": "ETH-USDC",
+    "block": 58576591,
+    "ts": 1794874427,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 403,
+    "market": "ETH-USDC",
+    "block": 58576621,
+    "ts": 1794874487,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 405,
+    "market": "ETH-USDC",
+    "block": 58576651,
+    "ts": 1794874547,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 407,
+    "market": "ETH-USDC",
+    "block": 58576681,
+    "ts": 1794874607,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 409,
+    "market": "ETH-USDC",
+    "block": 58576711,
+    "ts": 1794874667,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 411,
+    "market": "ETH-USDC",
+    "block": 58576741,
+    "ts": 1794874727,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 413,
+    "market": "ETH-USDC",
+    "block": 58576771,
+    "ts": 1794874787,
+    "sqrt_price": "3380215606326555131972173",
+    "price": 1820.244123
+   },
+   {
+    "id": 415,
+    "market": "ETH-USDC",
+    "block": 58576801,
+    "ts": 1794874847,
+    "sqrt_price": "3380215606291322575514354",
+    "price": 1820.244123
+   },
+   {
+    "id": 417,
+    "market": "ETH-USDC",
+    "block": 58576831,
+    "ts": 1794874907,
+    "sqrt_price": "3380215606291322575514354",
+    "price": 1820.244123
+   },
+   {
+    "id": 419,
+    "market": "ETH-USDC",
+    "block": 58576861,
+    "ts": 1794874967,
+    "sqrt_price": "3380215606291322575514354",
+    "price": 1820.244123
+   },
+   {
+    "id": 421,
+    "market": "ETH-USDC",
+    "block": 58576891,
+    "ts": 1794875027,
+    "sqrt_price": "3380187501166534293679965",
+    "price": 1820.213854
+   },
+   {
+    "id": 423,
+    "market": "ETH-USDC",
+    "block": 58576921,
+    "ts": 1794875087,
+    "sqrt_price": "3379937616530672017049647",
+    "price": 1819.944741
+   },
+   {
+    "id": 425,
+    "market": "ETH-USDC",
+    "block": 58576951,
+    "ts": 1794875147,
+    "sqrt_price": "3379937616530672017049647",
+    "price": 1819.944741
+   },
+   {
+    "id": 427,
+    "market": "ETH-USDC",
+    "block": 58576981,
+    "ts": 1794875207,
+    "sqrt_price": "3379937609674354269286009",
+    "price": 1819.944734
+   },
+   {
+    "id": 429,
+    "market": "ETH-USDC",
+    "block": 58577011,
+    "ts": 1794875267,
+    "sqrt_price": "3379937612147813951887569",
+    "price": 1819.944736
+   },
+   {
+    "id": 431,
+    "market": "ETH-USDC",
+    "block": 58577041,
+    "ts": 1794875327,
+    "sqrt_price": "3379937612147813951887569",
+    "price": 1819.944736
+   },
+   {
+    "id": 433,
+    "market": "ETH-USDC",
+    "block": 58577071,
+    "ts": 1794875387,
+    "sqrt_price": "3379937612147813951887569",
+    "price": 1819.944736
+   },
+   {
+    "id": 435,
+    "market": "ETH-USDC",
+    "block": 58577101,
+    "ts": 1794875447,
+    "sqrt_price": "3379937612147813951887569",
+    "price": 1819.944736
+   },
+   {
+    "id": 437,
+    "market": "ETH-USDC",
+    "block": 58577131,
+    "ts": 1794875507,
+    "sqrt_price": "3379937612147813951887569",
+    "price": 1819.944736
+   },
+   {
+    "id": 439,
+    "market": "ETH-USDC",
+    "block": 58577161,
+    "ts": 1794875567,
+    "sqrt_price": "3379937195887708305193819",
+    "price": 1819.944288
+   },
+   {
+    "id": 441,
+    "market": "ETH-USDC",
+    "block": 58577191,
+    "ts": 1794875627,
+    "sqrt_price": "3379937237222132495014563",
+    "price": 1819.944332
+   },
+   {
+    "id": 443,
+    "market": "ETH-USDC",
+    "block": 58577221,
+    "ts": 1794875687,
+    "sqrt_price": "3379625036407017099911557",
+    "price": 1819.608136
+   },
+   {
+    "id": 445,
+    "market": "ETH-USDC",
+    "block": 58577251,
+    "ts": 1794875747,
+    "sqrt_price": "3379278194229639571832832",
+    "price": 1819.234672
+   },
+   {
+    "id": 447,
+    "market": "ETH-USDC",
+    "block": 58577281,
+    "ts": 1794875807,
+    "sqrt_price": "3379278196008458849940470",
+    "price": 1819.234673
+   },
+   {
+    "id": 449,
+    "market": "ETH-USDC",
+    "block": 58577311,
+    "ts": 1794875867,
+    "sqrt_price": "3379278196008458849940470",
+    "price": 1819.234673
+   },
+   {
+    "id": 451,
+    "market": "ETH-USDC",
+    "block": 58577341,
+    "ts": 1794875927,
+    "sqrt_price": "3379278196008458849940470",
+    "price": 1819.234673
+   },
+   {
+    "id": 453,
+    "market": "ETH-USDC",
+    "block": 58577371,
+    "ts": 1794875987,
+    "sqrt_price": "3379278196008458849940470",
+    "price": 1819.234673
+   },
+   {
+    "id": 455,
+    "market": "ETH-USDC",
+    "block": 58577401,
+    "ts": 1794876047,
+    "sqrt_price": "3379236109063556145476526",
+    "price": 1819.189359
+   },
+   {
+    "id": 457,
+    "market": "ETH-USDC",
+    "block": 58577431,
+    "ts": 1794876107,
+    "sqrt_price": "3379236109063556145476526",
+    "price": 1819.189359
+   },
+   {
+    "id": 459,
+    "market": "ETH-USDC",
+    "block": 58577461,
+    "ts": 1794876167,
+    "sqrt_price": "3379236109063556145476526",
+    "price": 1819.189359
+   },
+   {
+    "id": 461,
+    "market": "ETH-USDC",
+    "block": 58577491,
+    "ts": 1794876227,
+    "sqrt_price": "3379235364656936489077597",
+    "price": 1819.188557
+   },
+   {
+    "id": 463,
+    "market": "ETH-USDC",
+    "block": 58577521,
+    "ts": 1794876287,
+    "sqrt_price": "3379235364656936489077597",
+    "price": 1819.188557
+   },
+   {
+    "id": 465,
+    "market": "ETH-USDC",
+    "block": 58577551,
+    "ts": 1794876347,
+    "sqrt_price": "3379221979086297571967373",
+    "price": 1819.174145
+   },
+   {
+    "id": 467,
+    "market": "ETH-USDC",
+    "block": 58577581,
+    "ts": 1794876407,
+    "sqrt_price": "3379221979086297571967373",
+    "price": 1819.174145
+   },
+   {
+    "id": 469,
+    "market": "ETH-USDC",
+    "block": 58577611,
+    "ts": 1794876467,
+    "sqrt_price": "3379221979051065028128094",
+    "price": 1819.174145
+   },
+   {
+    "id": 471,
+    "market": "ETH-USDC",
+    "block": 58577641,
+    "ts": 1794876527,
+    "sqrt_price": "3379221979051065028128094",
+    "price": 1819.174145
+   },
+   {
+    "id": 473,
+    "market": "ETH-USDC",
+    "block": 58577671,
+    "ts": 1794876587,
+    "sqrt_price": "3379221979051065028128094",
+    "price": 1819.174145
+   },
+   {
+    "id": 475,
+    "market": "ETH-USDC",
+    "block": 58577701,
+    "ts": 1794876647,
+    "sqrt_price": "3379224074129638427552136",
+    "price": 1819.176401
+   },
+   {
+    "id": 477,
+    "market": "ETH-USDC",
+    "block": 58577731,
+    "ts": 1794876707,
+    "sqrt_price": "3379224074129638427552136",
+    "price": 1819.176401
+   },
+   {
+    "id": 479,
+    "market": "ETH-USDC",
+    "block": 58577761,
+    "ts": 1794876767,
+    "sqrt_price": "3378959532514711144496809",
+    "price": 1818.891585
+   }
+  ],
+  "BTC-USDC": [
+   {
+    "id": 242,
+    "market": "BTC-USDC",
+    "block": 58574191,
+    "ts": 1794869627,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 244,
+    "market": "BTC-USDC",
+    "block": 58574221,
+    "ts": 1794869687,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 246,
+    "market": "BTC-USDC",
+    "block": 58574251,
+    "ts": 1794869747,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 248,
+    "market": "BTC-USDC",
+    "block": 58574281,
+    "ts": 1794869807,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 250,
+    "market": "BTC-USDC",
+    "block": 58574311,
+    "ts": 1794869867,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 252,
+    "market": "BTC-USDC",
+    "block": 58574341,
+    "ts": 1794869927,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 254,
+    "market": "BTC-USDC",
+    "block": 58574371,
+    "ts": 1794869987,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 256,
+    "market": "BTC-USDC",
+    "block": 58574401,
+    "ts": 1794870047,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 258,
+    "market": "BTC-USDC",
+    "block": 58574431,
+    "ts": 1794870107,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 260,
+    "market": "BTC-USDC",
+    "block": 58574461,
+    "ts": 1794870167,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 262,
+    "market": "BTC-USDC",
+    "block": 58574491,
+    "ts": 1794870227,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 264,
+    "market": "BTC-USDC",
+    "block": 58574521,
+    "ts": 1794870287,
+    "sqrt_price": "3123006575653489291566262775",
+    "price": 64359.605024
+   },
+   {
+    "id": 266,
+    "market": "BTC-USDC",
+    "block": 58574551,
+    "ts": 1794870347,
+    "sqrt_price": "3123137908559572266899210240",
+    "price": 64354.192291
+   },
+   {
+    "id": 268,
+    "market": "BTC-USDC",
+    "block": 58574581,
+    "ts": 1794870407,
+    "sqrt_price": "3123235671918236338917212160",
+    "price": 64350.163531
+   },
+   {
+    "id": 270,
+    "market": "BTC-USDC",
+    "block": 58574611,
+    "ts": 1794870467,
+    "sqrt_price": "3123311391123348535044472832",
+    "price": 64347.043455
+   },
+   {
+    "id": 272,
+    "market": "BTC-USDC",
+    "block": 58574641,
+    "ts": 1794870527,
+    "sqrt_price": "3123311391123348535044472832",
+    "price": 64347.043455
+   },
+   {
+    "id": 274,
+    "market": "BTC-USDC",
+    "block": 58574671,
+    "ts": 1794870587,
+    "sqrt_price": "3123311391123348535044472832",
+    "price": 64347.043455
+   },
+   {
+    "id": 276,
+    "market": "BTC-USDC",
+    "block": 58574701,
+    "ts": 1794870647,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 278,
+    "market": "BTC-USDC",
+    "block": 58574731,
+    "ts": 1794870707,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 280,
+    "market": "BTC-USDC",
+    "block": 58574761,
+    "ts": 1794870767,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 282,
+    "market": "BTC-USDC",
+    "block": 58574791,
+    "ts": 1794870827,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 284,
+    "market": "BTC-USDC",
+    "block": 58574821,
+    "ts": 1794870887,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 286,
+    "market": "BTC-USDC",
+    "block": 58574851,
+    "ts": 1794870947,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 288,
+    "market": "BTC-USDC",
+    "block": 58574881,
+    "ts": 1794871007,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 290,
+    "market": "BTC-USDC",
+    "block": 58574911,
+    "ts": 1794871067,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 292,
+    "market": "BTC-USDC",
+    "block": 58574941,
+    "ts": 1794871127,
+    "sqrt_price": "3123422205531678824386789376",
+    "price": 64342.47766
+   },
+   {
+    "id": 294,
+    "market": "BTC-USDC",
+    "block": 58574971,
+    "ts": 1794871187,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 296,
+    "market": "BTC-USDC",
+    "block": 58575001,
+    "ts": 1794871247,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 298,
+    "market": "BTC-USDC",
+    "block": 58575031,
+    "ts": 1794871307,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 300,
+    "market": "BTC-USDC",
+    "block": 58575061,
+    "ts": 1794871367,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 302,
+    "market": "BTC-USDC",
+    "block": 58575091,
+    "ts": 1794871427,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 304,
+    "market": "BTC-USDC",
+    "block": 58575121,
+    "ts": 1794871487,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 306,
+    "market": "BTC-USDC",
+    "block": 58575151,
+    "ts": 1794871547,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 308,
+    "market": "BTC-USDC",
+    "block": 58575181,
+    "ts": 1794871607,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 310,
+    "market": "BTC-USDC",
+    "block": 58575211,
+    "ts": 1794871667,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 312,
+    "market": "BTC-USDC",
+    "block": 58575241,
+    "ts": 1794871727,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 314,
+    "market": "BTC-USDC",
+    "block": 58575271,
+    "ts": 1794871787,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 316,
+    "market": "BTC-USDC",
+    "block": 58575301,
+    "ts": 1794871847,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 318,
+    "market": "BTC-USDC",
+    "block": 58575331,
+    "ts": 1794871907,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 320,
+    "market": "BTC-USDC",
+    "block": 58575361,
+    "ts": 1794871967,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 322,
+    "market": "BTC-USDC",
+    "block": 58575391,
+    "ts": 1794872027,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 324,
+    "market": "BTC-USDC",
+    "block": 58575421,
+    "ts": 1794872087,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 326,
+    "market": "BTC-USDC",
+    "block": 58575451,
+    "ts": 1794872147,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 328,
+    "market": "BTC-USDC",
+    "block": 58575481,
+    "ts": 1794872207,
+    "sqrt_price": "3123447009352347913266133255",
+    "price": 64341.455755
+   },
+   {
+    "id": 330,
+    "market": "BTC-USDC",
+    "block": 58575511,
+    "ts": 1794872267,
+    "sqrt_price": "3123689154256775381713871850",
+    "price": 64331.480785
+   },
+   {
+    "id": 332,
+    "market": "BTC-USDC",
+    "block": 58575541,
+    "ts": 1794872327,
+    "sqrt_price": "3123847368015884518785802484",
+    "price": 64324.964547
+   },
+   {
+    "id": 334,
+    "market": "BTC-USDC",
+    "block": 58575571,
+    "ts": 1794872387,
+    "sqrt_price": "3123896162122343099513545148",
+    "price": 64322.955098
+   },
+   {
+    "id": 336,
+    "market": "BTC-USDC",
+    "block": 58575601,
+    "ts": 1794872447,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 338,
+    "market": "BTC-USDC",
+    "block": 58575631,
+    "ts": 1794872507,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 340,
+    "market": "BTC-USDC",
+    "block": 58575661,
+    "ts": 1794872567,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 342,
+    "market": "BTC-USDC",
+    "block": 58575691,
+    "ts": 1794872627,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 344,
+    "market": "BTC-USDC",
+    "block": 58575721,
+    "ts": 1794872687,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 346,
+    "market": "BTC-USDC",
+    "block": 58575751,
+    "ts": 1794872747,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 348,
+    "market": "BTC-USDC",
+    "block": 58575781,
+    "ts": 1794872807,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 350,
+    "market": "BTC-USDC",
+    "block": 58575811,
+    "ts": 1794872867,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 352,
+    "market": "BTC-USDC",
+    "block": 58575841,
+    "ts": 1794872927,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 354,
+    "market": "BTC-USDC",
+    "block": 58575871,
+    "ts": 1794872987,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 356,
+    "market": "BTC-USDC",
+    "block": 58575901,
+    "ts": 1794873047,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 358,
+    "market": "BTC-USDC",
+    "block": 58575931,
+    "ts": 1794873107,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 360,
+    "market": "BTC-USDC",
+    "block": 58575961,
+    "ts": 1794873167,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 362,
+    "market": "BTC-USDC",
+    "block": 58575991,
+    "ts": 1794873227,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 364,
+    "market": "BTC-USDC",
+    "block": 58576021,
+    "ts": 1794873287,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 366,
+    "market": "BTC-USDC",
+    "block": 58576051,
+    "ts": 1794873347,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 368,
+    "market": "BTC-USDC",
+    "block": 58576081,
+    "ts": 1794873407,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 370,
+    "market": "BTC-USDC",
+    "block": 58576111,
+    "ts": 1794873467,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 372,
+    "market": "BTC-USDC",
+    "block": 58576141,
+    "ts": 1794873527,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 374,
+    "market": "BTC-USDC",
+    "block": 58576171,
+    "ts": 1794873587,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 376,
+    "market": "BTC-USDC",
+    "block": 58576201,
+    "ts": 1794873647,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 378,
+    "market": "BTC-USDC",
+    "block": 58576231,
+    "ts": 1794873707,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 380,
+    "market": "BTC-USDC",
+    "block": 58576261,
+    "ts": 1794873767,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 382,
+    "market": "BTC-USDC",
+    "block": 58576291,
+    "ts": 1794873827,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 384,
+    "market": "BTC-USDC",
+    "block": 58576321,
+    "ts": 1794873887,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 386,
+    "market": "BTC-USDC",
+    "block": 58576351,
+    "ts": 1794873947,
+    "sqrt_price": "3123995456650362134025786545",
+    "price": 64318.866221
+   },
+   {
+    "id": 388,
+    "market": "BTC-USDC",
+    "block": 58576381,
+    "ts": 1794874007,
+    "sqrt_price": "3124122376524673263555688837",
+    "price": 64313.640321
+   },
+   {
+    "id": 390,
+    "market": "BTC-USDC",
+    "block": 58576411,
+    "ts": 1794874067,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 392,
+    "market": "BTC-USDC",
+    "block": 58576441,
+    "ts": 1794874127,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 394,
+    "market": "BTC-USDC",
+    "block": 58576471,
+    "ts": 1794874187,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 396,
+    "market": "BTC-USDC",
+    "block": 58576501,
+    "ts": 1794874247,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 398,
+    "market": "BTC-USDC",
+    "block": 58576531,
+    "ts": 1794874307,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 400,
+    "market": "BTC-USDC",
+    "block": 58576561,
+    "ts": 1794874367,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 402,
+    "market": "BTC-USDC",
+    "block": 58576591,
+    "ts": 1794874427,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 404,
+    "market": "BTC-USDC",
+    "block": 58576621,
+    "ts": 1794874487,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 406,
+    "market": "BTC-USDC",
+    "block": 58576651,
+    "ts": 1794874547,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 408,
+    "market": "BTC-USDC",
+    "block": 58576681,
+    "ts": 1794874607,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 410,
+    "market": "BTC-USDC",
+    "block": 58576711,
+    "ts": 1794874667,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 412,
+    "market": "BTC-USDC",
+    "block": 58576741,
+    "ts": 1794874727,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 414,
+    "market": "BTC-USDC",
+    "block": 58576771,
+    "ts": 1794874787,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 416,
+    "market": "BTC-USDC",
+    "block": 58576801,
+    "ts": 1794874847,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 418,
+    "market": "BTC-USDC",
+    "block": 58576831,
+    "ts": 1794874907,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 420,
+    "market": "BTC-USDC",
+    "block": 58576861,
+    "ts": 1794874967,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 422,
+    "market": "BTC-USDC",
+    "block": 58576891,
+    "ts": 1794875027,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 424,
+    "market": "BTC-USDC",
+    "block": 58576921,
+    "ts": 1794875087,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 426,
+    "market": "BTC-USDC",
+    "block": 58576951,
+    "ts": 1794875147,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 428,
+    "market": "BTC-USDC",
+    "block": 58576981,
+    "ts": 1794875207,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 430,
+    "market": "BTC-USDC",
+    "block": 58577011,
+    "ts": 1794875267,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 432,
+    "market": "BTC-USDC",
+    "block": 58577041,
+    "ts": 1794875327,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 434,
+    "market": "BTC-USDC",
+    "block": 58577071,
+    "ts": 1794875387,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 436,
+    "market": "BTC-USDC",
+    "block": 58577101,
+    "ts": 1794875447,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 438,
+    "market": "BTC-USDC",
+    "block": 58577131,
+    "ts": 1794875507,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 440,
+    "market": "BTC-USDC",
+    "block": 58577161,
+    "ts": 1794875567,
+    "sqrt_price": "3124122175461471033611023406",
+    "price": 64313.648599
+   },
+   {
+    "id": 442,
+    "market": "BTC-USDC",
+    "block": 58577191,
+    "ts": 1794875627,
+    "sqrt_price": "3124309991221022610207801344",
+    "price": 64305.916489
+   },
+   {
+    "id": 444,
+    "market": "BTC-USDC",
+    "block": 58577221,
+    "ts": 1794875687,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 446,
+    "market": "BTC-USDC",
+    "block": 58577251,
+    "ts": 1794875747,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 448,
+    "market": "BTC-USDC",
+    "block": 58577281,
+    "ts": 1794875807,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 450,
+    "market": "BTC-USDC",
+    "block": 58577311,
+    "ts": 1794875867,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 452,
+    "market": "BTC-USDC",
+    "block": 58577341,
+    "ts": 1794875927,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 454,
+    "market": "BTC-USDC",
+    "block": 58577371,
+    "ts": 1794875987,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 456,
+    "market": "BTC-USDC",
+    "block": 58577401,
+    "ts": 1794876047,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 458,
+    "market": "BTC-USDC",
+    "block": 58577431,
+    "ts": 1794876107,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 460,
+    "market": "BTC-USDC",
+    "block": 58577461,
+    "ts": 1794876167,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 462,
+    "market": "BTC-USDC",
+    "block": 58577491,
+    "ts": 1794876227,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 464,
+    "market": "BTC-USDC",
+    "block": 58577521,
+    "ts": 1794876287,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 466,
+    "market": "BTC-USDC",
+    "block": 58577551,
+    "ts": 1794876347,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 468,
+    "market": "BTC-USDC",
+    "block": 58577581,
+    "ts": 1794876407,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 470,
+    "market": "BTC-USDC",
+    "block": 58577611,
+    "ts": 1794876467,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 472,
+    "market": "BTC-USDC",
+    "block": 58577641,
+    "ts": 1794876527,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 474,
+    "market": "BTC-USDC",
+    "block": 58577671,
+    "ts": 1794876587,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 476,
+    "market": "BTC-USDC",
+    "block": 58577701,
+    "ts": 1794876647,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 478,
+    "market": "BTC-USDC",
+    "block": 58577731,
+    "ts": 1794876707,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   },
+   {
+    "id": 480,
+    "market": "BTC-USDC",
+    "block": 58577761,
+    "ts": 1794876767,
+    "sqrt_price": "3124732338124273333202064354",
+    "price": 64288.534156
+   }
+  ]
+ },
+ "trades": [
+  {
+   "strategy": "f1-22",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f1-22",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f2-05",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f2-05",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f1-14",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.75,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f1-14",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.75,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f2-11",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.75,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f2-11",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.75,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f2-03",
+   "market": "ETH-USDC",
+   "quote_id": 439,
+   "block": 58577161,
+   "ts": 1794875567,
+   "price": 1819.944288,
+   "from": 0,
+   "to": -0.2,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f2-03",
+   "market": "ETH-USDC",
+   "quote_id": 479,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 1818.891585,
+   "from": -0.2,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f1-06",
+   "market": "BTC-USDC",
+   "quote_id": 388,
+   "block": 58576381,
+   "ts": 1794874007,
+   "price": 64313.640321,
+   "from": 0,
+   "to": -1,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f1-06",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -1,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-01",
+   "market": "BTC-USDC",
+   "quote_id": 388,
+   "block": 58576381,
+   "ts": 1794874007,
+   "price": 64313.640321,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-01",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-03",
+   "market": "BTC-USDC",
+   "quote_id": 388,
+   "block": 58576381,
+   "ts": 1794874007,
+   "price": 64313.640321,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-03",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-04",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-04",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-05",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-05",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-06",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.25,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-06",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.25,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-07",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.75,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-07",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.75,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-08",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.7,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-08",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.7,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-09",
+   "market": "BTC-USDC",
+   "quote_id": 442,
+   "block": 58577191,
+   "ts": 1794875627,
+   "price": 64305.916489,
+   "from": 0,
+   "to": -0.75,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-09",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -0.75,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-11",
+   "market": "ETH-USDC",
+   "quote_id": 439,
+   "block": 58577161,
+   "ts": 1794875567,
+   "price": 1819.944288,
+   "from": 0,
+   "to": -0.2,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-11",
+   "market": "ETH-USDC",
+   "quote_id": 479,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 1818.891585,
+   "from": -0.2,
+   "to": 0,
+   "reason": "close"
+  },
+  {
+   "strategy": "f3-12",
+   "market": "BTC-USDC",
+   "quote_id": 388,
+   "block": 58576381,
+   "ts": 1794874007,
+   "price": 64313.640321,
+   "from": 0,
+   "to": -1,
+   "reason": "signal"
+  },
+  {
+   "strategy": "f3-12",
+   "market": "BTC-USDC",
+   "quote_id": 480,
+   "block": 58577761,
+   "ts": 1794876767,
+   "price": 64288.534156,
+   "from": -1,
+   "to": 0,
+   "reason": "close"
+  }
+ ]
+}
