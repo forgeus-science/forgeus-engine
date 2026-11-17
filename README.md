@@ -7,7 +7,7 @@ The deterministic evolution engine behind [Forgeus](https://forgeus.science). 24
 - One file, no dependencies: [`src/engine.ts`](src/engine.ts). The app serves the same file at <https://dapp.forgeus.science/engine.ts>, and `npm run check-live` checks that the two are byte-identical.
 - Spec: [`PROTOCOL.md`](PROTOCOL.md)
 - Test vectors: [`vectors/`](vectors) (real archives from the public API)
-- Website: <https://forgeus.science> · Docs: <https://docs.forgeus.science> · App: <https://dapp.forgeus.science>
+- Website: <https://forgeus.science> · Docs: <https://docs.forgeus.science> · App: <https://dapp.forgeus.science> · X: <https://x.com/forgeusscience>
 
 ## Use
 
